@@ -1,0 +1,101 @@
+.navbar{
+    height: 6rem;
+    /* border: 2px solid green; */
+    width: 100%;
+    display: flex;
+    background-color: rgb(245, 235, 235);
+    box-shadow:2px 0 3px grey;
+}
+
+.left{
+    height: 6rem;
+    width: 50%;
+    /* border: 2px solid red;  */
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    
+}
+
+
+
+.right{
+    height: 6rem;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+img {
+    width: 200px;
+    height: 6rem;
+    object-fit: fill;
+    /* You can also use cover instead of fill but they are different */
+}
+
+.buttons{
+    /* border: 1px solid red; */
+    height: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+    
+}
+
+.completion{
+    background-color: rgb(54, 81, 235);
+    padding: 0 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    font-size: 20px;
+    /* flex-wrap: wrap; */
+    /* flex-basis: 33.33%; */
+}
+
+.name{
+    background-color: rgb(54, 81, 235);
+    padding: 0 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    font-size: 20px;
+
+}
+
+.reset{
+    background-color: rgb(54, 81, 235);
+    padding: 0 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    font-size: 20px;
+}
+
+.task{
+    height: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.task-input{
+    padding: 0 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    outline: none;
+    border-style: double;
+}
+
+.add{
+    background-color: rgb(54, 81, 235);
+    padding: 0 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    outline: none;
+    border-style: none; 
+    font-size: 20px;
+}
