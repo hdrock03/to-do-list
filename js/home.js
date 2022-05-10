@@ -1,29 +1,37 @@
-const fname= document.querySelector('.fname');
-const lname= document.querySelector('.lname');
-const email= document.querySelector('.email');
-const pwd= document.querySelector('.pwd');
-const confirmPwd= document.querySelector('.confirmpwd');
-const btn= document.querySelector('.btn');
-const form= document.querySelector('.form');
+const completion = document.querySelector(".completion");
+const name = document.querySelector(".name");
+const reset = document.querySelector(".reset");
+const add = document.querySelector(".add");
+const taskInput = document.querySelector(".task-input");
+const taskList = document.querySelector(".task-lists")
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
+add.addEventListener("click", addTask)
+// console.log('9')
+function addTask(){
+// console.log('9')
+const li = document.createElement('li');
+li.className = 'task-item';
+li.appendChild(document.createTextNode(taskInput.value))
+taskList.appendChild(li);
+storeTaskInLocalStorage(taskInput.value)
+taskList.innerHTML= taskInput.value;
 
-    if(pwd.value !== confirmPwd.value){
-        alert("password did not match");
-        return;
-    }
+}
 
-    const userData = {
-        isLoggedIn: true,
-        firstname : fname.value,
-        lastname : lname.value,
-        email : email.value,
-        password : pwd.value,
-        confirnPassword: confirmPwd.value
-    }
-    localStorage.setItem('email',email.value);
-    // localStorage.setItem("userdata", JSON.stringify(userData));
+ function storeTaskInLocalStorage(task) {
+     let tasks;
+     if(localStorage.getItem(tasks) === null){
+         tasks=[];
+     } else {
+         tasks = JSON.parse(localStorage.getItem('tasks'))
+     }
 
-    window.location.replace("http://127.0.0.1:5503/login.html");
-})
+     tasks.push(task)
+     localStorage.setItem("tasks",json.stringify(tasks));
+ }
+
+ reset.addEventListener('click' , deleteTask );
+
+ function deleteTask(){
+    //  localStorage.removeItem()
+ }
