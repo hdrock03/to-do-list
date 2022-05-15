@@ -20,10 +20,15 @@ form.addEventListener('submit', e => {
         lastname : lname.value,
         email : email.value,
         password : pwd.value,
-        confirnPassword: confirmPwd.value
+        tasks: []
     }
-    localStorage.setItem('email',email.value);
-    // localStorage.setItem("userdata", JSON.stringify(userData));
+    localStorage.setItem(email.value, JSON.stringify(userData));
+    sessionStorage.setItem('userEmail', email.value)
 
-    window.location.replace("http://127.0.0.1:5503/login.html");
-})
+    // window.location.replace("http://127.0.0.1:5503/login.html");
+});
+
+
+
+
+

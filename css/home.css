@@ -99,3 +99,36 @@ img {
     border-style: none; 
     font-size: 20px;
 }
+
+i {
+
+    color: black;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+
+.output{
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+i {
+    cursor: pointer; 
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
